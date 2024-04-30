@@ -1,0 +1,16 @@
+.homePage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap : 10px;
+}
+
+.loading{
+    width: 80%;
+    margin-left: 10%;
+    height: 54px;
+    background-color: gold;
+    border : none;
+    font-size: 34px;
+}

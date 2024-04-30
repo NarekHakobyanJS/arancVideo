@@ -1,0 +1,8 @@
+.filmCard{
+    width: 280px;
+}
+
+
+.filmCard > img {
+    width: 100%;
+}
