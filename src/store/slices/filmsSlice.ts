@@ -70,26 +70,10 @@ export const fetcFilms = createAsyncThunk<Array<FilmsType>, number>(
 )
 
 
-
-// export type VideoData = {
-//     id: string,
-//     iso_639_1: string,
-//     iso_3166_1: string,
-//     key: string,
-//     name: string,
-//     official: boolean,
-//     published_at: string,
-//     site: string
-//     size: number,
-//     type: string
-// }
-
-
-
 export const fetchTrailer = createAsyncThunk<void, any>(
     'fetchTrailer',
-    async ({ movieId, iframe }: any) => {
-        const res: AxiosResponse<any> = await FilmsAPI.getTrailer(movieId)
+    async ({ myId , iframe }: any) => {
+        const res: AxiosResponse<any> = await FilmsAPI.getTrailer(myId)
         console.log(res);
         
         res.data.results.forEach((elm: any) => {
