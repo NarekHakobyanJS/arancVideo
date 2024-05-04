@@ -5,6 +5,9 @@
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+    position: sticky;
+    top : 0;
+    left: 0;
 }
 
 .header > img {
